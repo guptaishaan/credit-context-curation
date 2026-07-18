@@ -1,0 +1,40 @@
+seed: 42
+
+datasets:
+  lending_club:
+    path: data/lending_club.csv
+    max_rows: 200000
+    splits:
+      lc_pre_crisis:
+        pool_years: [2007, 2008]
+        test_years: [2009, 2010]
+      lc_post_crisis:
+        pool_years: [2009, 2010, 2011, 2012]
+        test_years: [2013, 2014, 2015]
+      lc_recent:
+        pool_years: [2013, 2014, 2015, 2016]
+        test_years: [2017, 2018]
+  freddie_mac:
+    path: data
+    max_rows: 200000
+    splits:
+      fm_early:
+        pool_years: [2019]
+        test_years: [2020]
+      fm_late:
+        pool_years: [2019, 2020]
+        test_years: [2021]
+
+strategies: [random, most_recent, class_balanced, economically_similar, high_confidence, diverse]
+n_context_values: [128, 256, 512, 1024]
+tabpfn:
+  n_ensemble_configurations: 4
+xgboost:
+  n_estimators: 300
+  max_depth: 6
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+output:
+  results_path: outputs/results.csv
+  figures_path: outputs/figures/

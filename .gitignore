@@ -1,0 +1,19 @@
+# Environments / caches
+.venv/
+__pycache__/
+*.pyc
+outputs/huggingface-cache/
+
+# Raw data (large / licensed — not redistributed)
+data/
+
+# Large binary outputs (regenerable)
+outputs/seeds/
+outputs/predictions/
+outputs/contexts/
+outputs/cache/
+outputs/models/
+outputs/.mplconfig/
+**/*.log
+
+# Keep small results: outputs/stats/ and outputs/figures/ are tracked

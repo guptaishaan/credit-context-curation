@@ -1,0 +1,11 @@
+dataset,split,best_strategy,baseline,gap_auc_mean,gap_ci95_lo,gap_ci95_hi,significant
+freddie_mac,fm_early,most_recent,xgboost_tuned,0.010023564070694938,-0.009142623897793642,0.030874099359866212,False
+freddie_mac,fm_early,most_recent,xgboost_full_pool,0.04086457277865435,0.021301774199882426,0.05985455967483857,True
+freddie_mac,fm_late,class_balanced,xgboost_tuned,0.0018767298800795613,-0.010925507466525014,0.012098002769380074,False
+freddie_mac,fm_late,class_balanced,xgboost_full_pool,0.022186787606120088,0.00402072872723763,0.03784782651418503,True
+lending_club,lc_post_crisis,diverse,xgboost_tuned,0.00395241483487983,-0.005463453409222543,0.017843941052884164,False
+lending_club,lc_post_crisis,diverse,xgboost_full_pool,0.01979962709919756,0.008853990504199789,0.03057817621663751,True
+lending_club,lc_pre_crisis,most_recent,xgboost_tuned,0.007241705481832566,-0.04061377874257632,0.06435035349549716,False
+lending_club,lc_pre_crisis,most_recent,xgboost_full_pool,0.010297740736114823,-0.038547952362782516,0.06116232275749678,False
+lending_club,lc_recent,random,xgboost_tuned,-0.014462575556076676,-0.022763635980965546,-0.005456119803017424,True
+lending_club,lc_recent,random,xgboost_full_pool,-0.014780538839067976,-0.023052733173394128,-0.004901489852206692,True
